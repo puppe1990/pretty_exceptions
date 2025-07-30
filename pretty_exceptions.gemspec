@@ -1,3 +1,5 @@
+require_relative "lib/pretty_exceptions/version"
+
 Gem::Specification.new do |spec|
   spec.name          = "pretty_exceptions"
   spec.version       = PrettyExceptions::VERSION
