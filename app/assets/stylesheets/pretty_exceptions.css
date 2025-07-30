@@ -1,2 +1,37 @@
-/* Optional overrides */
-pre { background-color: #F9FAFB; }
+/* Pretty Exceptions Styling */
+pre { 
+  background-color: #F9FAFB; 
+  border-radius: 0.375rem;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}
+
+/* Highlight the error line */
+.error-line {
+  background-color: #FEF2F2;
+  border-left: 4px solid #EF4444;
+}
+
+/* Improve readability of stack traces */
+.backtrace-frame {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.backtrace-frame:last-child {
+  border-bottom: none;
+}
+
+/* Source code syntax highlighting */
+.source-extract {
+  line-height: 1.5;
+}
+
+.line-number {
+  color: #6B7280;
+  user-select: none;
+  padding-right: 1rem;
+}

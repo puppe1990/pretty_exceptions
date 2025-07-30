@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title><%= @exception.class %> (<%= @status_code %>)</title>
-  <%= stylesheet_link_tag "application", media: "all" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <%= stylesheet_link_tag "pretty_exceptions", media: "all" if Rails.application.config.assets.precompile.include?("pretty_exceptions.css") %>
 </head>
 <body class="bg-gray-100 font-sans leading-relaxed text-gray-900">
   <div class="min-h-screen flex items-center justify-center p-4">
